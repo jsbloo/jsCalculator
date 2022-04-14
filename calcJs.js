@@ -18,9 +18,6 @@ const btn8 = document.getElementById("btn8");
 const btn9 = document.getElementById("btn9");
 const btn0 = document.getElementById("btn0");
 
-//--------------------------------log-------------------------------------------------
-const logE = document.getElementById("log");
-
 btn1.addEventListener("click", () => {sumString+="1"; display.innerHTML = sumString;});
 btn2.addEventListener("click", () => {sumString+="2"; display.innerHTML = sumString;});
 btn3.addEventListener("click", () => {sumString+="3"; display.innerHTML = sumString;});
@@ -50,6 +47,12 @@ btnNeg.addEventListener("click", () => {sumString+= "-"; display.innerHTML = sum
 btnLB.addEventListener("click", () => {sumString+= "("; display.innerHTML = sumString;});
 btnRB.addEventListener("click", () => {sumString+= ")"; display.innerHTML = sumString;});
 btnC.addEventListener("click", () => {sumString = ""; display.innerHTML = sumString;});
+
+//--------------------------------log-------------------------------------------------
+const logE = document.getElementById("log");
+
+const btnCLog = document.getElementById("clearLog");
+btnCLog.addEventListener("click", () => {logE.innerHTML = ""; display.innerHTML = sumString;});
 
 
 //---------------------------Equals logic------------------------------------------------
